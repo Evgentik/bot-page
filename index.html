@@ -41,7 +41,9 @@
 		
 		btnClear.addEventListener("click", function(){
 				let text = document.getElementById("textLink");
-				text.value = "";
+			let link = document.getElementById("frame").contentWindow.location.href
+				
+				text.value = link;
 			});
 		
 		btn.addEventListener("click", function(){
